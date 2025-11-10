@@ -84,8 +84,8 @@ body {
     linear-gradient(
       to bottom,
       rgba(255,255,255,1) 0%,    /* yuqori oq */
-      rgba(0, 0, 0, 0.344) 25%,   /* yuqoridan pastga o‘tish */
-      rgba(255,255,255,0) 75%,   /* o‘rtaning ranglari ko‘rinadi */
+      rgba(0, 0, 0, 0.344) 25%,   /* yuqoridan pastga o'tish */
+      rgba(255,255,255,0) 75%,   /* o'rtaning ranglari ko'rinadi */
       rgb(0, 0, 0) 100%   /* pastki oq */
     ),
     url('./images/davron.jpg') no-repeat center center;
@@ -120,13 +120,12 @@ body {
   color: white;
   padding: 48px 15px;
   background: linear-gradient(135deg, #000000 0%, #030303 100%);
-  /* -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%); */
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
   text-align: center;
   margin-top: -20px;
   border: none;
-  letter-spacing: 2px; /* qiymatini o'zingizga moslab oshiring yoki kamaytiring */
-  font-family:  'Arial Narrow Bold';
+  letter-spacing: 2px;
+   
 }
 
 .highlight {
@@ -219,6 +218,7 @@ body {
   margin: 0;
   font-size: 12px;
 }
+
 .present-container {
   position: relative;
   padding: 40px 15px;
@@ -226,17 +226,15 @@ body {
   background: #000; /* zamin rang */
   border-radius: 20px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-
   background-image: url("./images/praesimg.png");
   background-repeat: no-repeat;
-  background-size: contain; /* rasm to‘liq sig‘adi */
+  background-size: contain; /* rasm to'liq sig'adi */
   background-position: center center;
   width: 95%;
   height: 340px;
   max-width: 1200px;
   margin: 0 auto;
 }
-
 
 .present-container::before {
   content: "";
@@ -251,14 +249,8 @@ body {
   background-position: center;
   background-size: contain;
   pointer-events: none;
-  /* background-color: #1A1A1A;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%; */
-  
 }
 
- 
 .present-box {
   text-align: center;
   color: white;
@@ -272,7 +264,6 @@ body {
   margin-top: 50px;
   font-family: 'GilroyRegular', sans-serif;
   font-weight: 700;
-  
 }
 
 .present-box img {
@@ -287,7 +278,6 @@ body {
   font-weight: 300;
   letter-spacing: 2px; /* harflar orasidagi masofa */
 }
-
 
 /* TAQDIMOT */
 .taqdirmot-text-orench {
@@ -361,6 +351,7 @@ body {
   font-family: 'GilroyRegular', sans-serif;
   line-height: 1.8;
 }
+
 /* MODAL STYLES */
 .modal {
   display: none; /* dastlab yashirin */
@@ -371,8 +362,6 @@ body {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.837); /* orqa fon qorayadi */
-  
-  display: flex; /* markazlashtirish uchun kerak */
   justify-content: center;
   align-items: center;
 }
@@ -400,7 +389,6 @@ body {
   color: #000;
 }
 
-
 h3 {
   margin: 0 0 16px;
   font-size: 20px;
@@ -414,11 +402,6 @@ input {
   border: 1px solid #ddd;
   border-radius: 8px;
   font-size: 16px;
-}
-
-.phone-input {
-  display: flex;
-  gap: 8px;
 }
 
 .submit-btn {
@@ -671,6 +654,3 @@ input {
     font-size: 16px;
   }
 }
-
-
-
