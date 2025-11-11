@@ -10,7 +10,24 @@
         content="Bepul taqdimotda siz oyiga 4 mln so'mdan to‘lab, uy olish imkoniyatini bilib olishingiz mumkin. Foizlarsiz uy olish yo‘llari va sovg‘alar.">
     <meta name="keywords" content="uy olish, kreditsiz uy, taqdimot, sovg‘a, oyiga to‘lov, Cobalt avtomashina">
     <meta name="author" content="Sodiqjon Sodiqov">
-    ./images/titlelgoo
+    
+    <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '9259877257435272');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=9259877257435272&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 
 
     <link href="https://cdn.jsdelivr.net/gh/repalash/gilroy-free-webfont@fonts/Gilroy-Regular.css" rel="stylesheet">
@@ -103,30 +120,23 @@
                     <img src="./images/barmoqizi.png" alt="Barmoq izi">
                 </button>
 
-                <!-- 2. Forma modal -->
-                <div class="modal" id="formModal">
-                    <div class="modal-content">
-                        <span class="close" id="closeModal">×</span>
-                        <h3>Davom etish uchun ma'lumotlaringizni kiriting</h3>
+                <!-- Modal ochuvchi tugmalar -->
+<button id="openModalHero">Ro‘yxatdan o‘tish</button>
+<button id="openModalTaqdimot">Ishtirok etish</button>
 
-                        <form id="userForm">
-                            <input type="text" placeholder="Ismingiz" id="name" required>
-                            <div class="phone-input">
-                                <input type="tel" placeholder="Telefon raqamingiz" id="phone">
-                            </div>
-                            <button type="submit" class="submit-btn">DAVOM ETISH</button>
-                        </form>
-                    </div>
-                </div>
+<!-- 2. Forma modal -->
+<div class="modal" id="formModal">
+  <div class="modal-content">
+    <span class="close" id="closeModal">&times;</span>
+    <h3>Davom etish uchun ma'lumotlaringizni kiriting</h3>
 
-                <!-- 3. Muvaffaqiyat modal -->
-                <div class="modal" id="successModal">
-                    <div class="modal-content success-modal">
-                        <h2>Yana bir qadam qoldi!</h2>
-                        <p>Jonli efirda qatnashish uchun quyidagi tugmani bosib yopiq telegram kanalga obuna bo'ling!</p>
-                        <button class="subscribe-btn" id="subscribeLink">OBUNA BO‘LISH →</button>
-                    </div>
-                </div>
+    <form id="userForm">
+      <input type="text" placeholder="Ismingiz" id="name" required>
+      <input type="tel" placeholder="Telefon raqamingiz" id="phone" required>
+      <button type="submit" class="submit-btn">DAVOM ETISH</button>
+    </form>
+  </div>
+</div>
             </div>
         </section>
     </main>
