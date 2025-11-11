@@ -722,3 +722,9 @@ input {
     font-size: 16px;
   }
 }
+
+
+
+#hidden{
+  display: none;
+}
