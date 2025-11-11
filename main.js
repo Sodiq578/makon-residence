@@ -52,13 +52,7 @@ closeModal.addEventListener('click', () => formModal.style.display = 'none');
 const BOT_TOKEN = '8328125073:AAEWoSW-yjqgPLq4uLPEKGyemwa2lr47x6I';
 const CHAT_ID   = '-4935605017';
 const TG_LINK   = 'https://t.me/megaaksiya2026';
-<<<<<<< HEAD
-=======
-
-// LocalStorage orqali kunlik yuborishni nazorat qilamiz
-let message_id = localStorage.getItem('tg_message_id');
-let lastSent   = localStorage.getItem('tg_last_sent'); // YYYY-MM-DD
->>>>>>> ea3459d6c227d93f898526f0834cda678a3eb8a2
+ 
 
 // ================= FORM YUBORISH =================
 form.addEventListener('submit', async e => {
